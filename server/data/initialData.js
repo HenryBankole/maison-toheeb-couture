@@ -1,0 +1,1026 @@
+export const initialData = {
+  "settings": {
+    "atelierName": "MAISON TOHEEB BESPOKE",
+    "tagline": "Haute Couture Africaine, Boubous d'Honneur, Kaftans, Filas & Ouds Rares",
+    "phone": "22997000000",
+    "displayPhone": "+229 97 00 00 00",
+    "callPhone": "+22997000000",
+    "email": "contact@toheeb-couture.com",
+    "address": "Boulevard de la Marina, Cotonou / Victoria Island, Lagos",
+    "currency": "FCFA",
+    "bankName": "BOA / Ecobank Bénin",
+    "accountNumber": "010023456789",
+    "accountName": "Maison Toheeb Couture SARL",
+    "leadTimeDays": "4 à 6 Jours Ouvrés",
+    "previewUrl": "https://distant-twist-shopzilla-discovered.trycloudflare.com"
+  },
+  "products": [
+    {
+      "id": "bespoke-001",
+      "section": "bespoke",
+      "name": "Grand Boubou d'Honneur 'Présidentiel' 3 Pièces",
+      "category": "Boubous d'Honneur & Senator",
+      "price": 185000,
+      "image": "/uploads/product_bespoke-001.jpg",
+      "description": "Ensemble grand apparat 3 pièces (tunique longue, grand boubou ample et pantalon à plis). Plastron brodé main au fil d'or mat discret.",
+      "isCustomMade": true,
+      "turnaroundDays": 6,
+      "fabricRequirements": "4.5 Mètres",
+      "stockQuantity": 10,
+      "featured": true,
+      "availableMaterials": [
+        {
+          "name": "Laine Vierge Super 140s",
+          "extraPrice": 0
+        },
+        {
+          "name": "Bazin Riche Autrichien Getzner",
+          "extraPrice": 20000
+        },
+        {
+          "name": "Cashmere Impérial Lourd",
+          "extraPrice": 35000
+        },
+        {
+          "name": "Lin Irlandais Pur",
+          "extraPrice": 10000
+        }
+      ],
+      "availableColors": [
+        {
+          "name": "Vert Émeraude",
+          "hex": "#064e3b"
+        },
+        {
+          "name": "Bleu Nuit",
+          "hex": "#0f172a"
+        },
+        {
+          "name": "Blanc Pur Cérémonial",
+          "hex": "#f8fafc"
+        },
+        {
+          "name": "Noir Onyx",
+          "hex": "#18181b"
+        },
+        {
+          "name": "Bordeaux Royal",
+          "hex": "#831843"
+        }
+      ],
+      "tags": [
+        "Boubou d'Honneur",
+        "Senator",
+        "Cérémonie"
+      ]
+    },
+    {
+      "id": "bespoke-002",
+      "section": "bespoke",
+      "name": "Ensemble Senator Bespoke Deux Pièces Élégance",
+      "category": "Boubous d'Honneur & Senator",
+      "price": 145000,
+      "image": "/uploads/product_bespoke-002.jpg",
+      "description": "Coupe cintrée contemporaine, col officier rigide, patte de boutonnage sous gorge invisible et pantalon fuselé sans revers.",
+      "isCustomMade": true,
+      "turnaroundDays": 5,
+      "fabricRequirements": "4.0 Mètres",
+      "stockQuantity": 15,
+      "featured": true,
+      "availableMaterials": [
+        {
+          "name": "Laine Vierge Italienne Super 140s",
+          "extraPrice": 0
+        },
+        {
+          "name": "Lin Irlandais Haut de Gamme",
+          "extraPrice": 10000
+        },
+        {
+          "name": "Bazin Riche Getzner",
+          "extraPrice": 15000
+        }
+      ],
+      "availableColors": [
+        {
+          "name": "Noir Onyx",
+          "hex": "#18181b"
+        },
+        {
+          "name": "Gris Anthracite",
+          "hex": "#334155"
+        },
+        {
+          "name": "Bleu Marine Profond",
+          "hex": "#1e3a8a"
+        },
+        {
+          "name": "Beige Sahara",
+          "hex": "#d6c7b2"
+        }
+      ],
+      "tags": [
+        "Senator",
+        "Affaires",
+        "Coupe Moderne"
+      ]
+    },
+    {
+      "id": "bespoke-003",
+      "section": "bespoke",
+      "name": "Grand Agbada Impérial Majestueux 3 Pièces",
+      "category": "Boubous d'Honneur & Senator",
+      "price": 320000,
+      "image": "/uploads/product_bespoke-003.jpg",
+      "description": "Pièce maîtresse cérémoniale en damassé royal lourd. Broderies florales et géométriques façonnées à l'aiguille sur le col et l'encolure.",
+      "isCustomMade": true,
+      "turnaroundDays": 8,
+      "fabricRequirements": "7.5 Mètres",
+      "stockQuantity": 5,
+      "featured": true,
+      "availableMaterials": [
+        {
+          "name": "Damassé Royal Lourd",
+          "extraPrice": 0
+        },
+        {
+          "name": "Bazin Riche Grand Teint",
+          "extraPrice": 25000
+        }
+      ],
+      "availableColors": [
+        {
+          "name": "Bleu Saphir & Or",
+          "hex": "#1e3a8a"
+        },
+        {
+          "name": "Blanc Diamant",
+          "hex": "#f1f5f9"
+        },
+        {
+          "name": "Champagne Doré",
+          "hex": "#e5c07b"
+        }
+      ],
+      "tags": [
+        "Agbada",
+        "Mariage",
+        "Prestige"
+      ]
+    },
+    {
+      "id": "bespoke-004",
+      "section": "bespoke",
+      "name": "Kaftan Cérémonial en Bazin Riche Blanc",
+      "category": "Kaftans Sur Mesure",
+      "price": 125000,
+      "image": "/uploads/product_bespoke-004.jpg",
+      "description": "Bazin riche autrichien de haute tenue, éclat lustré soyeux et col d'officier avec surpiqûres festonnées. Idéal pour la prière du vendredi et festivités.",
+      "isCustomMade": true,
+      "turnaroundDays": 4,
+      "fabricRequirements": "4.5 Mètres",
+      "stockQuantity": 12,
+      "featured": true,
+      "availableMaterials": [
+        {
+          "name": "Bazin Riche Getzner Autriche",
+          "extraPrice": 0
+        },
+        {
+          "name": "Lin Irlandais Blanc",
+          "extraPrice": 5000
+        }
+      ],
+      "availableColors": [
+        {
+          "name": "Blanc Pur",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "Blanc Cassé / Ivoire",
+          "hex": "#fef3c7"
+        },
+        {
+          "name": "Bleu Ciel Pastel",
+          "hex": "#e0f2fe"
+        }
+      ],
+      "tags": [
+        "Bazin",
+        "Vendredi Jumu'ah",
+        "Pure White"
+      ]
+    },
+    {
+      "id": "bespoke-005",
+      "section": "bespoke",
+      "name": "Kaftan Slim Moderne Bleu Saphir",
+      "category": "Kaftans Sur Mesure",
+      "price": 110000,
+      "image": "/uploads/product_bespoke-005.jpg",
+      "description": "Coupe affinée épurée avec fentes latérales passepoilées argent mat. Confection légère parfaite pour cocktails et soirées de gala.",
+      "isCustomMade": true,
+      "turnaroundDays": 4,
+      "fabricRequirements": "4.0 Mètres",
+      "stockQuantity": 14,
+      "featured": true,
+      "availableMaterials": [
+        {
+          "name": "Laine Tropicale Super 140s",
+          "extraPrice": 0
+        },
+        {
+          "name": "Lin Irlandais",
+          "extraPrice": 8000
+        }
+      ],
+      "availableColors": [
+        {
+          "name": "Bleu Saphir",
+          "hex": "#2563eb"
+        },
+        {
+          "name": "Noir Minéral",
+          "hex": "#0f172a"
+        },
+        {
+          "name": "Gris Perle",
+          "hex": "#94a3b8"
+        }
+      ],
+      "tags": [
+        "Moderne",
+        "Kaftan",
+        "Cocktail"
+      ]
+    },
+    {
+      "id": "ready-001",
+      "section": "ready_to_wear",
+      "name": "Fila Traditionnel Aso-Oke Tissé Main (Gobi)",
+      "category": "Coiffes & Bonnets",
+      "price": 32000,
+      "image": "/uploads/product_ready-001.jpg",
+      "description": "Authentique bonnet Fila Yoruba tissé sur métier manuel avec fils Aso-Oke et liseré doré. Disponible immédiatement en boutique.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 24,
+      "featured": true,
+      "availableSizes": [
+        "55 cm",
+        "56 cm",
+        "57 cm",
+        "58 cm",
+        "59 cm",
+        "60 cm"
+      ],
+      "tags": [
+        "Fila",
+        "Aso-Oke",
+        "Coiffe"
+      ]
+    },
+    {
+      "id": "ready-002",
+      "section": "ready_to_wear",
+      "name": "Fila Royal Cérémonial Abeti Aja à Oreilles",
+      "category": "Coiffes & Bonnets",
+      "price": 40000,
+      "image": "/uploads/product_ready-002.jpg",
+      "description": "Bonnet de dignitaire traditionnel à rabats latéraux déployables. Tissu damassé rigidifié et doublure satin confort.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 15,
+      "featured": false,
+      "availableSizes": [
+        "56 cm",
+        "57 cm",
+        "58 cm",
+        "59 cm",
+        "60 cm"
+      ],
+      "tags": [
+        "Abeti Aja",
+        "Cérémonie",
+        "Coiffe"
+      ]
+    },
+    {
+      "id": "ready-003",
+      "section": "ready_to_wear",
+      "name": "Fila Noir en Velours Brodé Cannetille",
+      "category": "Coiffes & Bonnets",
+      "price": 35000,
+      "image": "/uploads/product_ready-003.jpg",
+      "description": "Bonnet en velours de coton noir dense rehaussé de broderies artisanales au fil d'or mat. En stock à l'atelier.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 18,
+      "featured": true,
+      "availableSizes": [
+        "56 cm",
+        "57 cm",
+        "58 cm",
+        "59 cm"
+      ],
+      "tags": [
+        "Velours",
+        "Brodé",
+        "Coiffe"
+      ]
+    },
+    {
+      "id": "ready-004",
+      "section": "ready_to_wear",
+      "name": "Oud Al-Maliki (Extrait Pur de Bois d'Agar)",
+      "category": "Parfums & Ouds",
+      "price": 55000,
+      "image": "/uploads/product_ready-004.jpg",
+      "description": "Bois de oud sauvage vieilli 12 ans, rose de Taïf, ambre gris et cuir chaud. Sillage opulent et tenue longue durée 24h.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 28,
+      "featured": true,
+      "availableSizes": [
+        "50 ml",
+        "100 ml"
+      ],
+      "tags": [
+        "Oud",
+        "Haute Parfumerie",
+        "Flacon"
+      ]
+    },
+    {
+      "id": "ready-005",
+      "section": "ready_to_wear",
+      "name": "Attar Royal Musc Blanc & Ambre Doux",
+      "category": "Parfums & Ouds",
+      "price": 25000,
+      "image": "/uploads/product_ready-005.jpg",
+      "description": "Huile de parfum pure en fiole de cristal taillé. Sans alcool, sillage velouté sur la peau aux notes de vanille bourbon et musc blanc.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 35,
+      "featured": true,
+      "availableSizes": [
+        "12 ml (Attar pur)",
+        "24 ml"
+      ],
+      "tags": [
+        "Attar",
+        "Huile de Parfum",
+        "Sans Alcool"
+      ]
+    },
+    {
+      "id": "ready-006",
+      "section": "ready_to_wear",
+      "name": "Brume Textile Bakhoor pour Grands Boubous",
+      "category": "Parfums & Ouds",
+      "price": 22000,
+      "image": "/uploads/product_ready-006.jpg",
+      "description": "Vaporisateur spécialement formulé pour parfumer les étoffes nobles sans tacher le Bazin ou le lin. Résines précieuses de Tchouraï.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 30,
+      "featured": false,
+      "availableSizes": [
+        "200 ml"
+      ],
+      "tags": [
+        "Bakhoor",
+        "Brume Textile",
+        "Flacon"
+      ]
+    },
+    {
+      "id": "ready-007",
+      "section": "ready_to_wear",
+      "name": "Kaftan Prêt-à-Porter en Pur Lin Blanc Ivoire",
+      "category": "Kaftans & Boubous",
+      "price": 85000,
+      "image": "/uploads/product_ready-007.jpg",
+      "description": "Kaftan coupe droite moderne confectionné et repassé, disponible sur cintre en boutique. Col officier épuré.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 12,
+      "featured": true,
+      "availableSizes": [
+        "S (38-40)",
+        "M (42-44)",
+        "L (46-48)",
+        "XL (50-52)",
+        "XXL (54-56)"
+      ],
+      "tags": [
+        "Kaftan",
+        "Prêt-à-Porter",
+        "Lin"
+      ]
+    },
+    {
+      "id": "ready-008",
+      "section": "ready_to_wear",
+      "name": "Tunique Senator Prête à Porter Bleu Nuit",
+      "category": "Kaftans & Boubous",
+      "price": 95000,
+      "image": "/uploads/product_ready-008.jpg",
+      "description": "Ensemble deux pièces prêt à emporter en laine tropicale infroissable. Finitions soignées pour usage immédiat.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 8,
+      "featured": true,
+      "availableSizes": [
+        "M (42-44)",
+        "L (46-48)",
+        "XL (50-52)",
+        "XXL (54-56)"
+      ],
+      "tags": [
+        "Senator",
+        "Prêt-à-Porter",
+        "Bleu Nuit"
+      ]
+    },
+    {
+      "id": "ready-009",
+      "section": "ready_to_wear",
+      "name": "Coupon Bazin Riche Getzner Autrichien Blanc (5 Mètres)",
+      "category": "Tissus & Matières",
+      "price": 95000,
+      "image": "/uploads/product_ready-009.jpg",
+      "description": "Coupon entier de 5 mètres sous blister d'origine Getzner Textil. Éclat brillant perlé et toucher glacé garanti.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 16,
+      "featured": true,
+      "availableSizes": [
+        "Coupon 5 Mètres",
+        "Coupon 10 Mètres"
+      ],
+      "tags": [
+        "Bazin",
+        "Getzner",
+        "Coupon Tissu"
+      ]
+    },
+    {
+      "id": "ready-010",
+      "section": "ready_to_wear",
+      "name": "Coupon Drap de Laine Vierge Super 140s (4 Mètres)",
+      "category": "Tissus & Matières",
+      "price": 80000,
+      "image": "/uploads/product_ready-010.jpg",
+      "description": "Laine italienne fluide de haute filature, tombé net et respirant. Idéal pour Senator ou pantalon sur mesure.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 14,
+      "featured": false,
+      "availableSizes": [
+        "Coupon 4 Mètres"
+      ],
+      "tags": [
+        "Laine",
+        "Super 140s",
+        "Tissu"
+      ]
+    },
+    {
+      "id": "ready-011",
+      "section": "ready_to_wear",
+      "name": "Ceinture Cuir Pleine Fleur Artisanale Boucle Laiton",
+      "category": "Ceintures",
+      "price": 28000,
+      "image": "/uploads/product_ready-011.jpg",
+      "description": "Cuir végétal tanné naturellement, patine cognac et boucle en laiton massif brossé. Finition artisanale tranche cirée.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 20,
+      "featured": true,
+      "availableSizes": [
+        "85 cm",
+        "90 cm",
+        "95 cm",
+        "100 cm",
+        "105 cm"
+      ],
+      "tags": [
+        "Ceinture",
+        "Cuir",
+        "Accessoires"
+      ]
+    },
+    {
+      "id": "ready-012",
+      "section": "ready_to_wear",
+      "name": "Ceinture Cuir Façon Croco Noir Intemporel",
+      "category": "Ceintures",
+      "price": 32000,
+      "image": "/uploads/product_ready-012.jpg",
+      "description": "Cuir grainé façon crocodile noir onyx, boucle argentée sobre. Parfaite sur pantalon habillé ou tenue Senator.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 15,
+      "featured": false,
+      "availableSizes": [
+        "85 cm",
+        "90 cm",
+        "95 cm",
+        "100 cm",
+        "105 cm"
+      ],
+      "tags": [
+        "Ceinture",
+        "Croco",
+        "Noir"
+      ]
+    },
+    {
+      "id": "ready-013",
+      "section": "ready_to_wear",
+      "name": "Babouches Royales Cuir Camel Brodé Main",
+      "category": "Chaussures & Babouches",
+      "price": 48000,
+      "image": "/uploads/product_ready-013.jpg",
+      "description": "Babouches de dignitaire en cuir de chèvre souple façonné à la main. Semelle intérieure matelassée confort.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 18,
+      "featured": true,
+      "availableSizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "tags": [
+        "Babouches",
+        "Cuir",
+        "Chaussures"
+      ]
+    },
+    {
+      "id": "ready-014",
+      "section": "ready_to_wear",
+      "name": "Mocassins Sartoriaux Cuir Tressé Noir",
+      "category": "Chaussures & Babouches",
+      "price": 65000,
+      "image": "/uploads/product_ready-014.jpg",
+      "description": "Mocassins d'apparat en cuir tressé main, semelle cousue Blake. Confort absolu pour cérémonies et réceptions.",
+      "isCustomMade": false,
+      "turnaroundDays": 0,
+      "stockQuantity": 12,
+      "featured": true,
+      "availableSizes": [
+        "41",
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "tags": [
+        "Mocassins",
+        "Cuir Tressé",
+        "Chaussures"
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "id": "stage-1",
+      "name": "Commande Confirmée",
+      "description": "Commande acceptée par le tailleur et mise au planning"
+    },
+    {
+      "id": "stage-2",
+      "name": "Tissu & Patron",
+      "description": "Métrage préparé, patron tracé et découpé sur mesure"
+    },
+    {
+      "id": "stage-3",
+      "name": "Couture & Assemblage",
+      "description": "Assemblage mécanique et manuel des pans du vêtement"
+    },
+    {
+      "id": "stage-4",
+      "name": "Broderie & Finitions",
+      "description": "Broderies artisanales au fil d'or et boutonnières"
+    },
+    {
+      "id": "stage-5",
+      "name": "Repassage & Prêt au Retrait",
+      "description": "Pressing vapeur lourd, brume Bakhoor et ensachage"
+    },
+    {
+      "id": "stage-6",
+      "name": "Livré & Récupéré",
+      "description": "Vêtement remis au client ou livré à domicile"
+    }
+  ],
+  "orders": [
+    {
+      "id": "3354654654526",
+      "customerName": "El Hadj Ousmane Diallo",
+      "customerPhone": "+229 97 45 12 34",
+      "whatsapp": "22997451234",
+      "orderDate": "20 Oct 2026",
+      "estimatedCompletionDate": "26 Oct 2026",
+      "daysRemaining": 3,
+      "isAcceptedByTailor": true,
+      "acceptedDate": "20 Oct 2026 à 10:15",
+      "tailoringStage": "Couture & Assemblage",
+      "stageIndex": 2,
+      "custodyState": "En Confection à l'Atelier",
+      "paymentMethod": "Virement Bancaire",
+      "paymentCard": "Visa **56",
+      "deliveryAddress": "Villa 14, Boulevard de la Marina, Cotonou",
+      "items": [
+        {
+          "name": "Grand Boubou d'Honneur 'Présidentiel' 3 Pièces",
+          "qty": 1,
+          "price": 185000,
+          "material": "Cashmere Impérial Lourd",
+          "color": "Vert Émeraude",
+          "image": "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?q=80&w=900&auto=format&fit=crop"
+        },
+        {
+          "name": "Fila Traditionnel Aso-Oke Tissé Main (Gobi)",
+          "qty": 1,
+          "price": 32000,
+          "material": "Aso-Oke Or & Indigo",
+          "color": "Doré",
+          "image": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=80&w=900&auto=format&fit=crop"
+        }
+      ],
+      "totalAmount": 217000,
+      "amountPaid": 150000,
+      "balanceOwed": 67000,
+      "discount": 0,
+      "deliveryFee": 0,
+      "tax": 0,
+      "customMeasurements": {
+        "neck": 44,
+        "chest": 112,
+        "shoulder": 50,
+        "sleeveLength": 66,
+        "kaftanLength": 138,
+        "waist": 96,
+        "trouserLength": 105,
+        "capSize": 58,
+        "unit": "cm"
+      },
+      "stageHistory": [
+        {
+          "stage": "Commande Confirmée",
+          "date": "20 Oct, 10:15",
+          "note": "Commande acceptée par Maître Rasheed"
+        },
+        {
+          "stage": "Tissu & Patron",
+          "date": "21 Oct, 14:00",
+          "note": "Patronage et découpe achevés"
+        },
+        {
+          "stage": "Couture & Assemblage",
+          "date": "22 Oct, 16:30",
+          "note": "Montage des manches et doublure en cours"
+        }
+      ],
+      "notes": "Client VIP. Préfère les cols bien amidonnés."
+    },
+    {
+      "id": "3352655445210",
+      "customerName": "Dr. Abdoulaye Traoré",
+      "customerPhone": "+229 95 11 22 33",
+      "whatsapp": "22995112233",
+      "orderDate": "22 Oct 2026",
+      "estimatedCompletionDate": "27 Oct 2026",
+      "daysRemaining": 4,
+      "isAcceptedByTailor": true,
+      "acceptedDate": "22 Oct 2026 à 11:00",
+      "tailoringStage": "Tissu & Patron",
+      "stageIndex": 1,
+      "custodyState": "En Confection à l'Atelier",
+      "paymentMethod": "Espèces Atelier",
+      "paymentCard": "Règlement Boutique",
+      "deliveryAddress": "Retrait direct au Showroom Cotonou",
+      "items": [
+        {
+          "name": "Ensemble Senator Bespoke Deux Pièces Élégance",
+          "qty": 1,
+          "price": 145000,
+          "material": "Laine Vierge Super 140s",
+          "color": "Noir Onyx",
+          "image": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=900&auto=format&fit=crop"
+        }
+      ],
+      "totalAmount": 145000,
+      "amountPaid": 145000,
+      "balanceOwed": 0,
+      "discount": 0,
+      "deliveryFee": 0,
+      "tax": 0,
+      "customMeasurements": {
+        "neck": 42,
+        "chest": 104,
+        "shoulder": 47,
+        "sleeveLength": 63,
+        "kaftanLength": 131,
+        "waist": 86,
+        "trouserLength": 101,
+        "capSize": 57,
+        "unit": "cm"
+      },
+      "stageHistory": [
+        {
+          "stage": "Commande Confirmée",
+          "date": "22 Oct, 11:00",
+          "note": "Validé avec paiement intégral"
+        },
+        {
+          "stage": "Tissu & Patron",
+          "date": "23 Oct, 09:30",
+          "note": "Découpe en cours"
+        }
+      ],
+      "notes": "Boutonnière invisible sans revers sur le pantalon."
+    },
+    {
+      "id": "3359874125634",
+      "customerName": "Ministre Koffi Mensah",
+      "customerPhone": "+228 90 22 33 44",
+      "whatsapp": "22890223344",
+      "orderDate": "23 Oct 2026",
+      "estimatedCompletionDate": "30 Oct 2026",
+      "daysRemaining": 7,
+      "isAcceptedByTailor": false,
+      "acceptedDate": null,
+      "tailoringStage": "Commande Confirmée",
+      "stageIndex": 0,
+      "custodyState": "En Attente de Confirmation par l'Atelier",
+      "paymentMethod": "Virement Bancaire",
+      "paymentCard": "En Attente de Validation",
+      "deliveryAddress": "Cité OUA, Lomé (Expédition Express)",
+      "items": [
+        {
+          "name": "Grand Agbada Impérial Majestueux 3 Pièces",
+          "qty": 1,
+          "price": 320000,
+          "material": "Damassé Royal Lourd",
+          "color": "Bleu Saphir & Or",
+          "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=900&auto=format&fit=crop"
+        }
+      ],
+      "totalAmount": 320000,
+      "amountPaid": 160000,
+      "balanceOwed": 160000,
+      "discount": 0,
+      "deliveryFee": 0,
+      "tax": 0,
+      "customMeasurements": null,
+      "stageHistory": [
+        {
+          "stage": "Demande Envoyée",
+          "date": "23 Oct, 18:20",
+          "note": "Demande reçue. En attente de confirmation du tailleur."
+        }
+      ],
+      "notes": "Prise de mesure prévue en atelier demain matin."
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust-001",
+      "name": "El Hadj Ousmane Diallo",
+      "phone": "+229 97 45 12 34",
+      "whatsapp": "22997451234",
+      "email": "diallo.ousmane@groupe-diallo.com",
+      "address": "Quartier Haie Vive, Cotonou",
+      "totalOrders": 3,
+      "totalBilled": 480000,
+      "totalPaid": 413000,
+      "balanceOwed": 67000,
+      "custodyStatus": "Vêtement Récupéré - Reste Solde à Payer",
+      "notes": "Client VIP. Exige toujours 4.5m de lin ou cashmere avec col amidonné.",
+      "measurements": {
+        "neck": 44,
+        "chest": 112,
+        "shoulder": 50,
+        "sleeveLength": 66,
+        "kaftanLength": 138,
+        "waist": 96,
+        "trouserLength": 105,
+        "capSize": 58,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "cust-002",
+      "name": "Dr. Abdoulaye Traoré",
+      "phone": "+229 95 11 22 33",
+      "whatsapp": "22995112233",
+      "email": "a.traore@clinique-esperance.org",
+      "address": "Cocody Ambassades, Abidjan / Cotonou",
+      "totalOrders": 2,
+      "totalBilled": 255000,
+      "totalPaid": 255000,
+      "balanceOwed": 0,
+      "custodyStatus": "Tissu à l'Atelier (En cours)",
+      "notes": "Préférence pour boutonnière invisible et bas de pantalon droit sans revers.",
+      "measurements": {
+        "neck": 42,
+        "chest": 104,
+        "shoulder": 47,
+        "sleeveLength": 63,
+        "kaftanLength": 131,
+        "waist": 86,
+        "trouserLength": 101,
+        "capSize": 57,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "cust-003",
+      "name": "Ministre Koffi Mensah",
+      "phone": "+228 90 22 33 44",
+      "whatsapp": "22890223344",
+      "email": "cabinet@mensah-associates.com",
+      "address": "Cité OUA, Lomé",
+      "totalOrders": 2,
+      "totalBilled": 640000,
+      "totalPaid": 480000,
+      "balanceOwed": 160000,
+      "custodyStatus": "Tissu à l'Atelier (En cours)",
+      "notes": "Spécialiste Grand Agbada. Double entoilage pour tenue impeccable.",
+      "measurements": {
+        "neck": 46,
+        "chest": 118,
+        "shoulder": 52,
+        "sleeveLength": 67,
+        "kaftanLength": 142,
+        "waist": 104,
+        "trouserLength": 107,
+        "capSize": 60,
+        "unit": "cm"
+      }
+    }
+  ],
+  "fabrics": [
+    {
+      "id": "fab-001",
+      "name": "Laine Vierge Italienne Super 140s (Bleu Nuit)",
+      "category": "Drap de Laine & Suiting",
+      "yardsInStock": 45,
+      "costPerYard": 14000,
+      "retailPricePerYard": 24000,
+      "color": "#0f172a",
+      "lowStockThreshold": 15,
+      "supplier": "Milano Textilia"
+    },
+    {
+      "id": "fab-002",
+      "name": "Pur Lin Irlandais (Blanc Optique & Écru)",
+      "category": "Lin Prestige",
+      "yardsInStock": 52,
+      "costPerYard": 12000,
+      "retailPricePerYard": 20000,
+      "color": "#f8fafc",
+      "lowStockThreshold": 15,
+      "supplier": "Belfast Mills"
+    },
+    {
+      "id": "fab-003",
+      "name": "Bazin Riche Getzner Autrichien (Blanc Brillant)",
+      "category": "Bazin & Shadda",
+      "yardsInStock": 28,
+      "costPerYard": 18000,
+      "retailPricePerYard": 30000,
+      "color": "#fef08a",
+      "lowStockThreshold": 12,
+      "supplier": "Getzner Autriche"
+    },
+    {
+      "id": "fab-004",
+      "name": "Cashmere Impérial (Vert Émeraude)",
+      "category": "Cashmere",
+      "yardsInStock": 8,
+      "costPerYard": 22000,
+      "retailPricePerYard": 38000,
+      "color": "#064e3b",
+      "lowStockThreshold": 15,
+      "supplier": "Cachemire Import"
+    },
+    {
+      "id": "fab-005",
+      "name": "Bandes Aso-Oke Tissées Main (Fils Or & Indigo)",
+      "category": "Tissage Traditionnel",
+      "yardsInStock": 35,
+      "costPerYard": 7000,
+      "retailPricePerYard": 14000,
+      "color": "#831843",
+      "lowStockThreshold": 10,
+      "supplier": "Coopérative Tisseurs d'Iseyin"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-001",
+      "senderName": "M. Babacar Ndiaye",
+      "phone": "+221 70 888 99 00",
+      "content": "Bonjour Maître Tailleur, j'ai 8 mètres de Bazin blanc que j'aimerais vous déposer demain pour un Grand Boubou de mariage. Êtes-vous ouvert ?",
+      "date": "23 Oct, 15:40",
+      "status": "non-lu"
+    }
+  ],
+  "categories": [
+    {
+      "id": "Boubous d'Honneur & Senator",
+      "name": "Boubous",
+      "image": "/uploads/cat_boubous.jpg",
+      "section": "bespoke"
+    },
+    {
+      "id": "Kaftans Sur Mesure",
+      "name": "Kaftans",
+      "image": "/uploads/1792869715504-798794642.jpg",
+      "section": "bespoke"
+    },
+    {
+      "id": "Coiffes & Bonnets",
+      "name": "Filas & Coiffes",
+      "image": "/uploads/cat_filas.jpg",
+      "section": "ready_to_wear"
+    },
+    {
+      "id": "Parfums & Ouds",
+      "name": "Parfums & Ouds",
+      "image": "/uploads/cat_parfums.jpg",
+      "section": "ready_to_wear"
+    },
+    {
+      "id": "Chaussures & Babouches",
+      "name": "Babouches",
+      "image": "/uploads/cat_babouches.jpg",
+      "section": "ready_to_wear"
+    },
+    {
+      "id": "Ceintures",
+      "name": "Ceintures",
+      "image": "/uploads/cat_ceintures.jpg",
+      "section": "ready_to_wear"
+    }
+  ],
+  "heroSlides": [
+    {
+      "id": 1,
+      "tag": "Collection Cérémonie & Prestige",
+      "titleLine1": "L'Honneur & la Grâce",
+      "titleLine2": "Haute Couture Homme",
+      "subtitle": "Grands Boubous d'Honneur et ensembles d'apparat confectionnés sur mesure dans les plus nobles étoffes d'Afrique de l'Ouest.",
+      "primaryCta": "Sur Mesure",
+      "secondaryCta": "Prêt-à-Porter",
+      "modelImage": "/uploads/hero_slide_1.jpg",
+      "featuredProduct": {
+        "id": "ready-004",
+        "name": "Oud Al-Maliki 100ml Pur",
+        "price": "55 000 FCFA",
+        "image": "/uploads/hero_prod_oud.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "tag": "Senator & Kaftans Modernes",
+      "titleLine1": "L'Art de l'Allure",
+      "titleLine2": "Coupe Royale & Pure",
+      "subtitle": "Ensembles Senator en laine vierge Super 140s et Kaftans minimalistes pour réceptions d'affaires et cérémonies officielles.",
+      "primaryCta": "Confection Senator",
+      "secondaryCta": "Boutique Showroom",
+      "modelImage": "/uploads/hero_slide_2.jpg",
+      "featuredProduct": {
+        "id": "ready-001",
+        "name": "Fila Aso-Oke Tissé Main",
+        "price": "32 000 FCFA",
+        "image": "/uploads/hero_prod_fila.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "tag": "Parfumerie Rare & Accessoires",
+      "titleLine1": "Sillage d'Exception",
+      "titleLine2": "Oud Pur & Cuir Noble",
+      "subtitle": "Extraits purs d'Oud de 12 ans, attars orientaux sans alcool, babouches royales brodées main et ceintures pleine fleur.",
+      "primaryCta": "Explorer Parfums",
+      "secondaryCta": "Prendre Rendez-vous",
+      "modelImage": "/uploads/hero_slide_3.jpg",
+      "featuredProduct": {
+        "id": "ready-013",
+        "name": "Babouches Royales en Cuir",
+        "price": "48 000 FCFA",
+        "image": "/uploads/hero_prod_shoe.jpg"
+      }
+    }
+  ]
+};
