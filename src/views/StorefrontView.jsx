@@ -138,7 +138,7 @@ export default function StorefrontView({
               Nos Modèles Phares
             </h2>
             <p className="text-xs sm:text-sm text-slate-400 font-normal">
-              Pièces d'exception sélectionnées pour vous &bull; Maison Toheeb
+              Pièces d'exception sélectionnées pour vous &bull; TAY Collections
             </p>
           </div>
 

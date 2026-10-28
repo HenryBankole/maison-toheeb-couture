@@ -16,7 +16,7 @@ export default function AtelierReceiptModal({ order, settings, onClose }) {
     const cleanPhone = (order.customerPhone || '').replace(/\D/g, '');
     const phone = cleanPhone.startsWith('00') ? cleanPhone.slice(2) : cleanPhone;
 
-    let msg = `👑 *REÇU OFFICIEL DE CONFECTION - ${settings?.atelierName || 'MAISON TOHEEB BESPOKE'}* 👑\n`;
+    let msg = `👑 *REÇU OFFICIEL DE CONFECTION - ${settings?.atelierName || 'TAY COLLECTIONS'}* 👑\n`;
     msg += `N° de Commande / Réf : *${order.id}*\n`;
     msg += `Date : ${order.orderDate}\n`;
     msg += `Client : *${order.customerName}*\n`;
@@ -44,8 +44,8 @@ export default function AtelierReceiptModal({ order, settings, onClose }) {
     msg += `• *Solde Dû : ${Number(order.balanceOwed || 0).toLocaleString()} ${currency}* ${order.balanceOwed === 0 ? '(Entièrement Soldé ✅)' : ''}\n\n`;
 
     msg += `Statut Confection : *${order.tailoringStage || 'Prêt au Retrait'}*\n`;
-    msg += `Suivi en ligne : http://localhost:5000\n\n`;
-    msg += `Merci pour votre confiance en l'excellence artisanale de la Maison Toheeb !`;
+    msg += `Suivi en ligne : ${settings?.previewUrl || 'https://maison-toheeb-couture.onrender.com'}\n\n`;
+    msg += `Merci pour votre confiance en l'excellence artisanale de TAY Collections !`;
 
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank');
@@ -103,19 +103,26 @@ export default function AtelierReceiptModal({ order, settings, onClose }) {
           
           {/* Atelier Brand Header */}
           <div className="border-b-2 border-slate-900 pb-5 flex flex-col sm:flex-row justify-between sm:items-start gap-4">
-            <div>
-              <span className="text-[10px] uppercase tracking-[0.3em] font-semibold text-slate-400 block mb-1">
-                Atelier Haute Couture &bull; Confection Traditionnelle
-              </span>
-              <h1 className="font-serif text-2xl font-bold tracking-tight text-slate-900">
-                {settings?.atelierName || 'MAISON TOHEEB BESPOKE'}
-              </h1>
-              <p className="text-xs text-slate-500 mt-0.5">
-                {settings?.address || 'Boulevard de la Marina, Cotonou / Victoria Island, Lagos'}
-              </p>
-              <p className="text-xs text-slate-500">
-                Tél / WhatsApp : <strong>{settings?.displayPhone || '+229 97 00 00 00'}</strong> &bull; {settings?.email || 'contact@toheeb-couture.com'}
-              </p>
+            <div className="flex items-start gap-4">
+              <img 
+                src="/tay-logo-highres.png" 
+                alt="TAY Collections Logo" 
+                className="w-16 h-16 object-contain shrink-0 drop-shadow-sm mt-0.5" 
+              />
+              <div>
+                <span className="text-[10px] uppercase tracking-[0.3em] font-semibold text-slate-400 block mb-1">
+                  Atelier Haute Couture &bull; Confection Traditionnelle
+                </span>
+                <h1 className="font-serif text-2xl font-bold tracking-tight text-slate-900">
+                  {settings?.atelierName || 'TAY COLLECTIONS'}
+                </h1>
+                <p className="text-xs text-slate-500 mt-0.5">
+                  {settings?.address || 'Boulevard Jean-Paul II, Tokoin-Wuiti, Lomé, Togo'}
+                </p>
+                <p className="text-xs text-slate-500">
+                  Tél / WhatsApp : <strong>{settings?.displayPhone || '+228 90 60 38 01 / +228 93 17 20 01'}</strong> &bull; {settings?.email || 'contact@tay-collections.com'}
+                </p>
+              </div>
             </div>
 
             <div className="text-left sm:text-right space-y-1">
@@ -248,11 +255,11 @@ export default function AtelierReceiptModal({ order, settings, onClose }) {
             <div className="text-xs text-slate-500 space-y-1.5 p-3.5 bg-slate-50 rounded-2xl border border-slate-200">
               <div className="font-bold text-slate-900 text-xs flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                <span>Certification Atelier Maison Toheeb</span>
+                <span>Certification Atelier TAY Collections</span>
               </div>
               <p className="text-[11px] leading-relaxed">
                 Ce reçu fait foi d'exécution des travaux de couture sur mesure ou de vente au showroom. 
-                Banque : {settings?.bankName || 'BOA / Ecobank'} &bull; Compte : {settings?.accountNumber || '010023456789'}.
+                Banque : {settings?.bankName || 'Ecobank / Coris Bank Togo'} &bull; Compte : {settings?.accountNumber || '010023456789'}.
               </p>
             </div>
 
@@ -287,7 +294,7 @@ export default function AtelierReceiptModal({ order, settings, onClose }) {
 
           {/* Signature & Quality guarantee footer */}
           <div className="pt-4 border-t border-slate-200 flex justify-between items-center text-[11px] text-slate-400">
-            <span>Maison Toheeb Bespoke &bull; Cotonou &bull; Lagos</span>
+            <span>TAY Collections &bull; Lomé, Togo</span>
             <span>Document certifié &bull; Traçabilité : {order.id}</span>
           </div>
 

@@ -103,7 +103,7 @@ export default function MessagesInbox({ messages, onRefresh }) {
                       <Phone className="w-3.5 h-3.5" />
                     </a>
                     <a
-                      href={`https://wa.me/${cleanPhone}?text=${encodeURIComponent(`Bonjour ${msg.senderName}, suite à votre message sur notre site web Maison Toheeb :`)}`}
+                      href={`https://wa.me/${cleanPhone}?text=${encodeURIComponent(`Bonjour ${msg.senderName}, suite à votre message sur notre site TAY Collections :`)}`}
                       target="_blank"
                       rel="noreferrer"
                       className="p-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs flex items-center gap-1 transition-colors"

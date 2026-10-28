@@ -732,5 +732,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Maison Toheeb Bespoke API Server active on port ${PORT}`);
+  console.log(`TAY Collections Bespoke API Server active on port ${PORT}`);
 });

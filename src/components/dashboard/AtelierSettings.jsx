@@ -4,17 +4,19 @@ import { api } from '../../services/api';
 
 export default function AtelierSettings({ settings, onRefresh }) {
   const [form, setForm] = useState({
-    atelierName: settings?.atelierName || 'MAISON TOHEEB BESPOKE',
-    tagline: settings?.tagline || "Haute Couture Africaine, Boubous d'Honneur, Kaftans, Filas & Ouds Rares",
-    phone: settings?.phone || '22997000000',
-    displayPhone: settings?.displayPhone || '+229 97 00 00 00',
-    callPhone: settings?.callPhone || '+22997000000',
-    email: settings?.email || 'contact@toheeb-couture.com',
-    address: settings?.address || 'Boulevard de la Marina, Cotonou / Victoria Island, Lagos',
+    atelierName: settings?.atelierName || 'TAY COLLECTIONS',
+    tagline: settings?.tagline || "Haute Couture Africaine, Boubous d'Honneur, Kaftans, Prêt-à-Porter & Parfums Rares",
+    phone: settings?.phone || '22890603801',
+    phone2: settings?.phone2 || '22893172001',
+    displayPhone: settings?.displayPhone || '+228 90 60 38 01 / +228 93 17 20 01',
+    callPhone: settings?.callPhone || '+22890603801',
+    email: settings?.email || 'contact@tay-collections.com',
+    address: settings?.address || 'Boulevard Jean-Paul II, Tokoin-Wuiti, Lomé, Togo',
+    mapsUrl: settings?.mapsUrl || 'https://www.google.com/maps?q=6.1628265380859375,1.2342439889907837&z=17&hl=en',
     currency: settings?.currency || 'FCFA',
-    bankName: settings?.bankName || 'BOA / Ecobank',
+    bankName: settings?.bankName || 'Ecobank / Coris Bank Togo',
     accountNumber: settings?.accountNumber || '010023456789',
-    accountName: settings?.accountName || 'Maison Toheeb Couture SARL',
+    accountName: settings?.accountName || 'TAY Collections SARL',
     leadTimeDays: settings?.leadTimeDays || '4 à 6 Jours Ouvrés'
   });
 
@@ -48,7 +50,7 @@ export default function AtelierSettings({ settings, onRefresh }) {
 
   const testWhatsAppConnection = () => {
     const cleanPhone = form.phone.replace(/[^0-9]/g, '');
-    const testMsg = `✨ Test de validation WhatsApp pour la Maison Toheeb Bespoke. Vos commandes et notifications de confection arriveront ici.`;
+    const testMsg = `✨ Test de validation WhatsApp pour TAY Collections. Vos commandes et notifications de confection arriveront ici.`;
     window.open(`https://wa.me/${cleanPhone}?text=${encodeURIComponent(testMsg)}`, '_blank');
   };
 

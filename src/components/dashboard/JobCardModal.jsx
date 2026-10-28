@@ -44,13 +44,16 @@ export default function JobCardModal({ order, settings, onClose }) {
           
           {/* Header */}
           <div className="border-b-2 border-slate-900 pb-3 flex justify-between items-start">
-            <div>
-              <h1 className="font-serif text-xl font-bold tracking-wide text-slate-900">
-                {settings?.atelierName || 'MAISON TOHEEB BESPOKE'}
-              </h1>
-              <p className="text-[11px] text-slate-500">
-                Fiche d'exécution atelier &bull; Patronage, découpe et montage artisanal
-              </p>
+            <div className="flex items-center gap-3">
+              <img src="/tay-logo-highres.png" alt="TAY Collections" className="w-10 h-10 object-contain drop-shadow-sm" />
+              <div>
+                <h1 className="font-serif text-xl font-bold tracking-wide text-slate-900">
+                  {settings?.atelierName || 'TAY COLLECTIONS'}
+                </h1>
+                <p className="text-[11px] text-slate-500">
+                  Fiche d'exécution atelier &bull; Patronage, découpe et montage artisanal &bull; Lomé, Togo
+                </p>
+              </div>
             </div>
             <div className="text-right">
               <span className="font-mono text-base font-bold text-slate-900 border border-slate-900 px-2.5 py-0.5 rounded">

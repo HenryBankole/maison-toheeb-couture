@@ -31,7 +31,7 @@ export default function App() {
   // Cart & Placed Orders (User side)
   const [cartItems, setCartItems] = useState(() => {
     try {
-      const saved = localStorage.getItem('toheeb_cart');
+      const saved = localStorage.getItem('tay_cart') || localStorage.getItem('toheeb_cart');
       return saved ? JSON.parse(saved) : [];
     } catch {
       return [];
@@ -40,7 +40,7 @@ export default function App() {
 
   const [userOrders, setUserOrders] = useState(() => {
     try {
-      const saved = localStorage.getItem('toheeb_user_orders');
+      const saved = localStorage.getItem('tay_user_orders') || localStorage.getItem('toheeb_user_orders');
       return saved ? JSON.parse(saved) : [];
     } catch {
       return [];
@@ -62,12 +62,12 @@ export default function App() {
 
   // Sync cart to localStorage
   useEffect(() => {
-    localStorage.setItem('toheeb_cart', JSON.stringify(cartItems));
+    localStorage.setItem('tay_cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
   // Sync user orders to localStorage
   useEffect(() => {
-    localStorage.setItem('toheeb_user_orders', JSON.stringify(userOrders));
+    localStorage.setItem('tay_user_orders', JSON.stringify(userOrders));
   }, [userOrders]);
 
   // Always reset scroll to top when switching between Atelier and Showroom

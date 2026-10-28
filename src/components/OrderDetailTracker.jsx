@@ -285,45 +285,47 @@ export default function OrderDetailTracker({
               </div>
             </div>
 
-            {/* Need Help Block */}
+            {/* Assistance Block */}
             <div className="space-y-2">
-              <h4 className="font-bold text-slate-900 text-sm">Need Help</h4>
+              <h4 className="font-bold text-slate-900 text-sm">Assistance & Contact</h4>
               <ul className="space-y-1.5 text-slate-600">
                 <li>
                   <button 
                     onClick={onOpenCallModal}
-                    className="hover:text-slate-900 flex items-center gap-1.5 transition-colors"
+                    className="hover:text-slate-900 flex items-center gap-1.5 transition-colors font-mono text-xs"
                   >
-                    <span>Appeler le Maître Tailleur</span>
+                    <span>Appeler : +228 90 60 38 01</span>
                     <ExternalLink className="w-3 h-3 text-slate-400" />
                   </button>
                 </li>
                 <li>
                   <a
-                    href={`https://wa.me/${cleanPhone}?text=${encodeURIComponent(`Bonjour Maître Tailleur, j'ai une question concernant ma commande N° [${order.id}].`)}`}
+                    href={`https://wa.me/${settings?.phone || '22890603801'}?text=${encodeURIComponent(`Bonjour TAY Collections, j'ai une question concernant ma commande N° [${order.id}].`)}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="hover:text-slate-900 flex items-center gap-1.5 transition-colors"
+                    className="hover:text-slate-900 flex items-center gap-1.5 transition-colors text-xs"
                   >
                     <span>Contacter sur WhatsApp</span>
                     <ExternalLink className="w-3 h-3 text-slate-400" />
                   </a>
                 </li>
                 <li>
-                  <button 
-                    onClick={onOpenMessageModal}
-                    className="hover:text-slate-900 flex items-center gap-1.5 transition-colors"
+                  <a 
+                    href={settings?.mapsUrl || "https://www.google.com/maps?q=6.1628265380859375,1.2342439889907837&z=17&hl=en"}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-amber-800 text-amber-700 font-medium flex items-center gap-1.5 transition-colors text-xs"
                   >
-                    <span>Prendre RDV en atelier</span>
-                    <ExternalLink className="w-3 h-3 text-slate-400" />
-                  </button>
+                    <span>Voir sur Google Maps (Lomé)</span>
+                    <ExternalLink className="w-3 h-3 text-amber-600" />
+                  </a>
                 </li>
               </ul>
             </div>
 
             {/* Order Summary Block */}
             <div className="space-y-2 bg-slate-50 p-3.5 rounded-2xl border border-slate-200">
-              <h4 className="font-bold text-slate-900 text-sm">Order Summary</h4>
+              <h4 className="font-bold text-slate-900 text-sm">Récapitulatif Financier</h4>
               <div className="space-y-1 text-slate-600">
                 <div className="flex justify-between">
                   <span>Sous-total</span>
@@ -349,23 +351,39 @@ export default function OrderDetailTracker({
           {/* Tailor Appointment Note for In-House Measurements */}
           <div className="p-4 rounded-2xl border border-slate-200 bg-white flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center shrink-0">
-                <Scissors className="w-5 h-5 text-slate-700" />
-              </div>
+              <img 
+                src="/tay-logo-highres.png" 
+                alt="TAY Collections" 
+                className="w-12 h-12 object-contain drop-shadow-sm shrink-0" 
+              />
               <div className="text-xs">
-                <strong className="text-slate-900 block font-serif">Séance de Prise de Mesure à l'Atelier</strong>
-                <span className="text-slate-500">
-                  Vous pouvez vous rendre directement à notre showroom pour une prise de mesure professionnelle par le Maître Tailleur.
+                <strong className="text-slate-900 block font-serif">Séance de Prise de Mesure à la Boutique TAY Collections</strong>
+                <span className="text-slate-500 block">
+                  {settings?.address || 'Boulevard Jean-Paul II, Tokoin-Wuiti, Lomé, Togo'}
+                </span>
+                <span className="text-slate-400 text-[11px]">
+                  Rendez-vous direct avec notre Maître Tailleur pour une coupe sur mesure parfaite.
                 </span>
               </div>
             </div>
 
-            <button
-              onClick={onOpenCallModal}
-              className="py-2 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs whitespace-nowrap transition-colors"
-            >
-              Planifier ma Visite
-            </button>
+            <div className="flex items-center gap-2">
+              <a
+                href={settings?.mapsUrl || "https://www.google.com/maps?q=6.1628265380859375,1.2342439889907837&z=17&hl=en"}
+                target="_blank"
+                rel="noreferrer"
+                className="py-2 px-3 rounded-xl border border-slate-200 hover:bg-slate-50 text-slate-700 font-medium text-xs whitespace-nowrap transition-colors flex items-center gap-1"
+              >
+                <MapPin className="w-3.5 h-3.5 text-amber-600" />
+                <span>Itinéraire Maps</span>
+              </a>
+              <button
+                onClick={onOpenCallModal}
+                className="py-2 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs whitespace-nowrap transition-colors"
+              >
+                Planifier ma Visite
+              </button>
+            </div>
           </div>
 
         </div>

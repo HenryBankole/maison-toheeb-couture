@@ -1,18 +1,26 @@
 export const initialData = {
   "settings": {
-    "atelierName": "MAISON TOHEEB BESPOKE",
-    "tagline": "Haute Couture Africaine, Boubous d'Honneur, Kaftans, Filas & Ouds Rares",
-    "phone": "22997000000",
-    "displayPhone": "+229 97 00 00 00",
-    "callPhone": "+22997000000",
-    "email": "contact@toheeb-couture.com",
-    "address": "Boulevard de la Marina, Cotonou / Victoria Island, Lagos",
+    "atelierName": "TAY COLLECTIONS",
+    "displayAtelierName": "TAY Collections",
+    "tagline": "Haute Couture Africaine, Boubous d'Honneur, Kaftans, Prêt-à-Porter & Parfums Rares",
+    "phone": "22890603801",
+    "phone2": "22893172001",
+    "displayPhone": "+228 90 60 38 01 / +228 93 17 20 01",
+    "callPhone": "+22890603801",
+    "callPhone2": "+22893172001",
+    "whatsapp": "22890603801",
+    "whatsapp2": "22893172001",
+    "email": "contact@tay-collections.com",
+    "address": "Boulevard Jean-Paul II, Tokoin-Wuiti, Lomé, Togo",
+    "city": "Lomé, Togo",
+    "mapsUrl": "https://www.google.com/maps?q=6.1628265380859375,1.2342439889907837&z=17&hl=en",
     "currency": "FCFA",
-    "bankName": "BOA / Ecobank Bénin",
+    "bankName": "Ecobank / Coris Bank Togo",
     "accountNumber": "010023456789",
-    "accountName": "Maison Toheeb Couture SARL",
+    "accountName": "TAY Collections SARL",
     "leadTimeDays": "4 à 6 Jours Ouvrés",
-    "previewUrl": "https://distant-twist-shopzilla-discovered.trycloudflare.com"
+    "previewUrl": "https://maison-toheeb-couture.onrender.com",
+    "logoUrl": "/tay-logo-highres.png"
   },
   "products": [
     {

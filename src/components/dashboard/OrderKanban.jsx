@@ -116,7 +116,7 @@ export default function OrderKanban({
           isOpen: true,
           title: "Notifier le Client de l'Avancement",
           message: `La commande N° ${orderId} de ${order.customerName} a été déplacée vers l'étape « ${targetStageName} ».\n\nSouhaitez-vous notifier le client de cette avancée par message WhatsApp ?`,
-          previewText: `Bonjour ${order.customerName},\nVotre tenue chez Maison Toheeb Bespoke est passée à l'étape : ${targetStageName}.\nSuivez en direct votre confection sur : http://localhost:5000`,
+          previewText: `Bonjour ${order.customerName},\nVotre tenue chez TAY Collections est passée à l'étape : ${targetStageName}.\nSuivez en direct votre confection sur : https://maison-toheeb-couture.onrender.com`,
           confirmText: "Oui, Notifier sur WhatsApp",
           cancelText: "Non, Ne pas Notifier",
           variant: "whatsapp",
@@ -164,7 +164,7 @@ export default function OrderKanban({
           isOpen: true,
           title: "Confirmation d'Acceptation & Notification",
           message: `La commande N° ${targetOrder.id} pour ${targetOrder.customerName} a été acceptée avec succès (Délai fixé : ${daysSet} jours).\n\nSouhaitez-vous envoyer la confirmation officielle sur WhatsApp au client ?`,
-          previewText: `Bonjour ${targetOrder.customerName},\nVotre commande N° ${targetOrder.id} a été validée et acceptée par notre atelier !\nDélai estimé de confection : ${daysSet} jours.\nMaison Toheeb Bespoke Haute Couture`,
+          previewText: `Bonjour ${targetOrder.customerName},\nVotre commande N° ${targetOrder.id} a été validée et acceptée par notre atelier !\nDélai estimé de confection : ${daysSet} jours.\nTAY Collections Haute Couture`,
           confirmText: "Oui, Notifier sur WhatsApp",
           cancelText: "Non, Ne pas Notifier",
           variant: "whatsapp",
@@ -212,7 +212,7 @@ export default function OrderKanban({
 
       const phone = (targetOrder.customerPhone || '').replace(/\D/g, '');
       const cleanPhone = phone.startsWith('00') ? phone.slice(2) : phone;
-      const msg = `Bonjour ${targetOrder.customerName},\nIci l'Atelier Maison Toheeb. Le délai de confection de votre tenue (Commande N° ${targetOrder.id}) a été actualisé : livraison estimée dans *${days} jours ouvrés* (date cible : *${targetDate}*).\nSuivi en direct : http://localhost:5000`;
+      const msg = `Bonjour ${targetOrder.customerName},\nIci l'Atelier TAY Collections. Le délai de confection de votre tenue (Commande N° ${targetOrder.id}) a été actualisé : livraison estimée dans *${days} jours ouvrés* (date cible : *${targetDate}*).\nSuivi en direct : https://maison-toheeb-couture.onrender.com`;
       const waUrl = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(msg)}`;
 
       setConfirmModalConfig({
@@ -306,7 +306,7 @@ export default function OrderKanban({
   const handleManualNotifyWhatsApp = (order) => {
     const phone = (order.customerPhone || '').replace(/\D/g, '');
     const cleanPhone = phone.startsWith('00') ? phone.slice(2) : phone;
-    const msg = `Bonjour ${order.customerName},\nIci l'Atelier Maison Toheeb. Votre tenue (Commande N° ${order.id}) est actuellement à l'étape : *${order.tailoringStage}*.\nIl reste environ *${order.daysRemaining ?? 5} jours* de confection.\nSuivi en ligne : http://localhost:5000\nMerci pour votre confiance !`;
+    const msg = `Bonjour ${order.customerName},\nIci l'Atelier TAY Collections. Votre tenue (Commande N° ${order.id}) est actuellement à l'étape : *${order.tailoringStage}*.\nIl reste environ *${order.daysRemaining ?? 5} jours* de confection.\nSuivi en ligne : https://maison-toheeb-couture.onrender.com\nMerci pour votre confiance !`;
     const waUrl = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(msg)}`;
 
     setConfirmModalConfig({

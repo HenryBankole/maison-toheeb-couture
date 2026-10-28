@@ -84,7 +84,7 @@ export default function CustomerManager({ customers, orders, settings, onRefresh
   const handleSendReminder = (cust) => {
     const cleanPhone = cust.whatsapp || cust.phone.replace(/[^0-9]/g, '');
     let msg = `Bonjour ${cust.name} ! ✨\n\n`;
-    msg += `Message de courtoisie de la *${settings?.atelierName || 'MAISON TOHEEB'}* concernant votre relevé de compte atelier.\n\n`;
+    msg += `Message de courtoisie de *${settings?.atelierName || 'TAY COLLECTIONS'}* concernant votre relevé de compte atelier.\n\n`;
     msg += `📊 *État de compte :*\n`;
     msg += `• Total Facturé : ${Number(cust.totalBilled || 0).toLocaleString()} ${currency}\n`;
     msg += `• Acomptes reçus : ${Number(cust.totalPaid || 0).toLocaleString()} ${currency}\n`;
@@ -92,7 +92,7 @@ export default function CustomerManager({ customers, orders, settings, onRefresh
     msg += `🏦 *Coordonnées bancaires / Virement :*\n`;
     msg += `Banque : ${settings?.bankName || 'BOA / Ecobank'}\n`;
     msg += `N° de Compte : *${settings?.accountNumber || '010023456789'}*\n`;
-    msg += `Titulaire : ${settings?.accountName || 'Maison Toheeb Couture'}\n\n`;
+    msg += `Titulaire : ${settings?.accountName || 'TAY Collections SARL'}\n\n`;
     msg += `Merci de nous faire parvenir le reçu de virement une fois effectué. Nous vous remercions pour votre précieuse confiance !`;
 
     const url = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(msg)}`;

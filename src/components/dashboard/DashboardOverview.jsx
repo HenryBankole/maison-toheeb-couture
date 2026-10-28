@@ -41,18 +41,18 @@ export default function DashboardOverview({
 
   // Handler to generate a courteous, professional payment reminder via WhatsApp
   const handleSendReminder = (order) => {
-    const cleanPhone = order.whatsapp || order.customerPhone.replace(/[^0-9]/g, '');
-    let msg = `Peace and blessings ${order.customerName},\n\n`;
-    msg += `This is a gentle payment reminder from *${settings?.atelierName || 'TOHEEB BESPOKE COUTURE'}* regarding your completed bespoke order *${order.id}*.\n\n`;
-    msg += `📋 *Summary:*\n`;
-    msg += `• Total Billed: ${currency}${order.totalAmount.toLocaleString()}\n`;
-    msg += `• Amount Received: ${currency}${order.amountPaid.toLocaleString()}\n`;
-    msg += `• *Outstanding Balance: ${currency}${order.balanceOwed.toLocaleString()}*\n\n`;
-    msg += `🏦 *Payment Details:*\n`;
-    msg += `Bank: ${settings?.bankName || 'Zenith Bank'}\n`;
-    msg += `Account Number: *${settings?.accountNumber || '1012345678'}*\n`;
-    msg += `Account Name: ${settings?.accountName || 'Toheeb Bespoke Atelier'}\n\n`;
-    msg += `Kindly send your payment confirmation receipt once transferred. Thank you for your continued patronage!`;
+    const cleanPhone = (order.whatsapp || order.customerPhone || '').replace(/[^0-9]/g, '');
+    let msg = `Bonjour ${order.customerName},\n\n`;
+    msg += `Message de courtoisie de la part de *${settings?.atelierName || 'TAY COLLECTIONS'}* concernant votre commande confectionnée *${order.id}*.\n\n`;
+    msg += `📋 *Récapitulatif :*\n`;
+    msg += `• Total Facturé : ${Number(order.totalAmount || 0).toLocaleString()} ${currency}\n`;
+    msg += `• Acompte Reçu : ${Number(order.amountPaid || 0).toLocaleString()} ${currency}\n`;
+    msg += `• *Solde Dû : ${Number(order.balanceOwed || 0).toLocaleString()} ${currency}*\n\n`;
+    msg += `🏦 *Coordonnées Bancaires / Virement :*\n`;
+    msg += `Banque : ${settings?.bankName || 'Ecobank / Coris Bank Togo'}\n`;
+    msg += `N° de Compte : *${settings?.accountNumber || '010023456789'}*\n`;
+    msg += `Titulaire : ${settings?.accountName || 'TAY Collections SARL'}\n\n`;
+    msg += `Merci de nous faire parvenir votre confirmation de règlement. Nous vous remercions pour votre confiance !`;
 
     const url = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank');

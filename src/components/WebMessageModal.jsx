@@ -86,7 +86,7 @@ export default function WebMessageModal({ onClose, onMessageSent }) {
                 required
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                placeholder="ex: +229 97 12 34 56"
+                placeholder="ex: +228 90 12 34 56"
                 className="w-full px-3 py-2 rounded-xl border border-slate-200 text-slate-900 focus:outline-none focus:border-slate-800"
               />
             </div>

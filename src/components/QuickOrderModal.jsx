@@ -24,7 +24,7 @@ export default function QuickOrderModal({
   onOpenOrderTracker 
 }) {
   const currency = settings?.currency || 'FCFA';
-  const targetWhatsApp = settings?.phone || '22997000000';
+  const targetWhatsApp = settings?.phone || '22890603801';
   const isBespoke = product?.isCustomMade;
 
   const [quantity, setQuantity] = useState(1);
@@ -114,7 +114,7 @@ export default function QuickOrderModal({
 
   const generateMessage = (orderId = 'EN-ATTENTE') => {
     if (isBespoke) {
-      let msg = `👑 *COMMANDE CONFECTION SUR MESURE - ${settings?.atelierName || 'MAISON TOHEEB'}* 👑\n`;
+      let msg = `👑 *COMMANDE CONFECTION SUR MESURE - ${settings?.atelierName || 'TAY COLLECTIONS'}* 👑\n`;
       msg += `Réf. Commande : *${orderId}*\n`;
       msg += `------------------------------------\n`;
       msg += `🛍️ *Modèle :* ${product.name}\n`;
@@ -151,7 +151,7 @@ export default function QuickOrderModal({
       return msg;
     } else {
       // Ready-to-wear direct purchase message (no custom delay or sewing measurements)
-      let msg = `🛍️ *ACHAT BOUTIQUE PRÊT-À-PORTER - ${settings?.atelierName || 'MAISON TOHEEB'}* 🛍️\n`;
+      let msg = `🛍️ *ACHAT BOUTIQUE PRÊT-À-PORTER - ${settings?.atelierName || 'TAY COLLECTIONS'}* 🛍️\n`;
       msg += `Réf. Commande : *${orderId}*\n`;
       msg += `------------------------------------\n`;
       msg += `📦 *Article :* ${product.name}\n`;
@@ -308,9 +308,12 @@ export default function QuickOrderModal({
             {/* Printable Proforma Receipt Slip */}
             <div className="p-5 rounded-2xl border border-slate-200 bg-slate-50 space-y-3 text-xs text-slate-800">
               <div className="flex justify-between items-start border-b border-slate-200 pb-2">
-                <div>
-                  <strong className="font-serif text-sm block">{settings?.atelierName || 'MAISON TOHEEB BESPOKE'}</strong>
-                  <span className="text-[11px] text-slate-500">Reçu de Commande & Bordereau</span>
+                <div className="flex items-center gap-2.5">
+                  <img src="/tay-logo-highres.png" alt="TAY Collections" className="w-8 h-8 object-contain" />
+                  <div>
+                    <strong className="font-serif text-sm block">{settings?.atelierName || 'TAY COLLECTIONS'}</strong>
+                    <span className="text-[11px] text-slate-500">Reçu de Commande & Bordereau</span>
+                  </div>
                 </div>
                 <div className="text-right">
                   <span className="font-mono font-bold">{orderSuccess.orderId}</span>
@@ -692,7 +695,7 @@ export default function QuickOrderModal({
                     required
                     value={customerPhone}
                     onChange={(e) => setCustomerPhone(e.target.value)}
-                    placeholder="ex: +229 97 12 34 56"
+                    placeholder="ex: +228 90 12 34 56"
                     className="w-full px-3 py-2 rounded-xl border border-slate-200 text-slate-900 focus:outline-none focus:border-slate-800"
                   />
                 </div>

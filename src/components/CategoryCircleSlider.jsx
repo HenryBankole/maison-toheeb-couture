@@ -56,7 +56,7 @@ export default function CategoryCircleSlider({
             Nouveautés Récentes
           </h2>
           <p className="text-xs sm:text-sm text-slate-400 font-normal">
-            Pièces maîtresses sélectionnées chaque mois &bull; Maison Toheeb
+            Pièces maîtresses sélectionnées chaque mois &bull; TAY Collections
           </p>
         </div>
 

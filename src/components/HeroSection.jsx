@@ -167,7 +167,7 @@ export default function HeroSection({
             <div className="relative w-full max-w-[420px] sm:max-w-[480px] lg:max-w-[540px] aspect-[4/5] overflow-hidden rounded-2xl shadow-sm">
               <img
                 src={slide.modelImage || "/uploads/hero_slide_1.jpg"}
-                alt="Maison Toheeb Haute Couture"
+                alt="TAY Collections Haute Couture"
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = '/uploads/hero_slide_1.jpg';
